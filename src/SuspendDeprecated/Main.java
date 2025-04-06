@@ -33,7 +33,8 @@ public class Main {
         }
 
         System.out.println("Thread1 is suspended");
-        t1.suspend(); // t2 will keep waiting as monitor lock is not released by t1 after terminated
+        // suspend() not more available in java so commenting the same
+        // t1.suspend(); // t2 will keep waiting as monitor lock is not released by t1 after terminated
         // if we call resume method to resume this suspended thread, it will continue its work
         // now t2 will get the lock
 
