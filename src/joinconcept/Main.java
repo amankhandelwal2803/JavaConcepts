@@ -1,4 +1,4 @@
-package JoinConcept;
+package joinconcept;
 
 public class Main {
 

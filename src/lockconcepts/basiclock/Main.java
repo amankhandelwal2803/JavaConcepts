@@ -1,4 +1,4 @@
-package LockConcepts.BasicLock;
+package lockconcepts.basiclock;
 
 public class Main {
 

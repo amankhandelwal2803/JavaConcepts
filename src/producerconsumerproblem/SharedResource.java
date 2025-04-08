@@ -1,12 +1,12 @@
-package ProducerConsumerProblem;
+package producerconsumerproblem;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class SharedResource {
 
-    private Queue<Integer> sharedBuffer;
-    private int bufferSize;
+    private final Queue<Integer> sharedBuffer;
+    private final int bufferSize;
 
     public SharedResource(int bufferSize) {
         sharedBuffer = new LinkedList<>(); // Used LinkedList here because it is unbounded means no size

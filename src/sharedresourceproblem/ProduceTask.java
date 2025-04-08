@@ -1,4 +1,4 @@
-package SharedResourceProblem;
+package sharedresourceproblem;
 
 public class ProduceTask implements  Runnable {
 

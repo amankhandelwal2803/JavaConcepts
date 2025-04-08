@@ -1,4 +1,4 @@
-package JoinConcept;
+package suspenddeprecated;
 
 public class SharedResource {
 

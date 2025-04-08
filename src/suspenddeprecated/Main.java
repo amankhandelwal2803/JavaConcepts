@@ -1,4 +1,4 @@
-package SuspendDeprecated;
+package suspenddeprecated;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package DaemonThreadConcept;
+package joinconcept;
 
 public class SharedResource {
 

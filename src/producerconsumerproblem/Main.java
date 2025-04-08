@@ -1,4 +1,4 @@
-package ProducerConsumerProblem;
+package producerconsumerproblem;
 
 public class Main {
 

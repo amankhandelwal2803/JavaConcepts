@@ -1,4 +1,4 @@
-package DaemonThreadConcept;
+package daemonthreadconcept;
 
 public class Main {
 

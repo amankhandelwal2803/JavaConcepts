@@ -1,4 +1,4 @@
-package SuspendDeprecated;
+package daemonthreadconcept;
 
 public class SharedResource {
 

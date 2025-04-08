@@ -1,4 +1,4 @@
-package LockConcepts.ReadWriteLock;
+package lockconcepts.readwritelock;
 
 import java.util.concurrent.locks.ReadWriteLock;
 

@@ -1,4 +1,4 @@
-package SharedResourceProblem;
+package sharedresourceproblem;
 
 public class Main {
     public static void main(String[] args) {

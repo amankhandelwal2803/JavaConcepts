@@ -1,13 +1,12 @@
-package LockConcepts.ReentrantLock.ReentrantLockCaseOne;
+package lockconcepts.reentrantlock.reentrantlockcasetwo;
 
 import java.util.concurrent.locks.ReentrantLock;
 
 public class SharedResource {
 
     boolean isAvailable = false;
-    ReentrantLock reentrantLock = new ReentrantLock();
 
-    public void produce() {
+    public void produce(ReentrantLock reentrantLock) {
         try {
             reentrantLock.lock(); // acquire the lock
             System.out.println("Lock acquired by: " + Thread.currentThread().getName());
