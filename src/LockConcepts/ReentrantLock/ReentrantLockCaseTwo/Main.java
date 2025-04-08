@@ -1,4 +1,4 @@
-package LockConcepts.ReentrantLockCaseTwo;
+package LockConcepts.ReentrantLock.ReentrantLockCaseTwo;
 
 import java.util.concurrent.locks.ReentrantLock;
 

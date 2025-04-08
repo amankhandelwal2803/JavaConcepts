@@ -1,4 +1,4 @@
-package LockConcepts.ReentrantLockCaseOne;
+package LockConcepts.ReentrantLock.ReentrantLockCaseOne;
 
 public class Main {
 
