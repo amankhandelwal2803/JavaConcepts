@@ -1,4 +1,4 @@
-package lockconcepts.reentrantlock.reentrantlockcaseone;
+package lockconcepts.customlocks.reentrantlock.reentrantlockcaseone;
 
 import java.util.concurrent.locks.ReentrantLock;
 

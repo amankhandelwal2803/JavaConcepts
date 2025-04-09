@@ -1,35 +1,38 @@
-package lockconcepts.stampedlock.readwritelock;
+package lockconcepts.customlocks.readwritelock;
 
-import java.util.concurrent.locks.StampedLock;
+import java.util.concurrent.locks.ReadWriteLock;
 
 public class SharedResource {
 
     boolean isAvailable = false;
-    StampedLock lock = new StampedLock();
 
-    public void produce() {
-        long stamp = lock.readLock();
+    public void produce(ReadWriteLock lock) {
         try {
+            lock.readLock().lock();
             System.out.println("Read lock acquired by: " + Thread.currentThread().getName());
             // read value only - isAvailable
-            Thread.sleep(6000L);
-        } catch (Exception e) {
+            Thread.sleep(8000L);
+        }
+        catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            lock.unlockRead(stamp);
+        }
+        finally {
+            lock.readLock().unlock();
             System.out.println("Read lock release by: " + Thread.currentThread().getName());
         }
     }
 
-    public void consume() {
-        long stamp = lock.writeLock();
+    public void consume(ReadWriteLock lock) {
         try {
+            lock.writeLock().lock();
             System.out.println("Write lock acquired by: " + Thread.currentThread().getName());
             isAvailable = false;
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            lock.unlockWrite(stamp);
+        }
+        finally {
+            lock.writeLock().unlock();
             System.out.println("Write lock release by: " + Thread.currentThread().getName());
         }
     }

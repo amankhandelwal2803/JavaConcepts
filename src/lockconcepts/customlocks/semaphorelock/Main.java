@@ -1,4 +1,4 @@
-package lockconcepts.stampedlock.readwritelock;
+package lockconcepts.customlocks.semaphorelock;
 
 public class Main {
 
@@ -8,10 +8,12 @@ public class Main {
 
         Thread t1 = new Thread(resource::produce);
         Thread t2 = new Thread(resource::produce);
-        Thread t3 = new Thread(resource::consume);
+        Thread t3 = new Thread(resource::produce);
+        Thread t4 = new Thread(resource::produce);
 
         t1.start();
         t2.start();
         t3.start();
+        t4.start();
     }
 }

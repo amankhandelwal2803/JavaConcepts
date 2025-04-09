@@ -1,4 +1,4 @@
-package lockconcepts.basiclock;
+package lockconcepts.monitorlock;
 
 public class Main {
 

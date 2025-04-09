@@ -1,4 +1,4 @@
-package lockconcepts.stampedlock.optimisticlock;
+package lockconcepts.customlocks.stampedlock.optimisticlock;
 
 import java.util.concurrent.locks.StampedLock;
 

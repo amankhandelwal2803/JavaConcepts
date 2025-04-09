@@ -1,4 +1,4 @@
-package lockconcepts.stampedlock.optimisticlock;
+package lockconcepts.customlocks.stampedlock.optimisticlock;
 
 public class Main {
 

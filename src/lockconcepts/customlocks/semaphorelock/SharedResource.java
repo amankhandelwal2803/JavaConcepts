@@ -1,4 +1,4 @@
-package lockconcepts.semaphorelock;
+package lockconcepts.customlocks.semaphorelock;
 
 import java.util.concurrent.Semaphore;
 
